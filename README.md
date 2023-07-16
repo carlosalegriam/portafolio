@@ -8,9 +8,9 @@
 
 ## Tecnologías Utilizadas
 
-- ![HTML5](https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_html_icon_130541.png) HTML5
-- ![CSS3](https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_css_icon_130661.png) CSS3
-- ![JavaScript](https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_js_icon_130509.png) JavaScript
+- HTML5
+- CSS
+- JavaScript
 
 ## Contenido
 
