@@ -1,0 +1,32 @@
+/*footer*/
+
+section.footer{
+    display: flex;
+    padding: 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.footer{
+    display: flex;
+    /* width: 1440px; */
+    padding: 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: var(--preto-blanco);
+}
+
+.footer__rodapie,
+.footer__rodapie__text {
+    color: var(--azul-100);
+    text-align: center;
+    font-size: 16px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+

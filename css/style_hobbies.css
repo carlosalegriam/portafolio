@@ -1,0 +1,115 @@
+/*Sección Hobbies*/
+
+section.hobbies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    
+}
+
+h3.hobbies__title {
+    color: var(--preto-100, #464646);
+    text-align: center;
+    font-size: 32px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.hobbies__line {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+.hobbies__box {
+    display: flex;
+    width: 176px;
+    height: 174px;
+    padding: 16px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.hobbies__img {
+    color: #2A7AE4;
+    text-align: center;
+    font-size: 32px;
+    font-family: Font Awesome 5 Free;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+img.hobbies__img {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+.hobbies__name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    align-self: stretch;
+}
+
+li.hobbies__name {
+    color: var(--preto-100, #464646);
+    font-size: 16px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    h3.hobbies__title {
+        color: var(--preto-100, #464646);
+        text-align: center;
+        font-family: Raleway;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+}
+
+@media (max-width: 426px) {
+    section.hobbies{
+        display: flex;
+        padding: 16px;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        align-self: stretch;
+        
+    }
+
+    .hobbies__line {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 16px;
+    }
+    
+    .hobbies__box {
+        display: flex;
+        width: 176px;
+        height: 174px;
+        padding: 16px;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        gap: 8px;
+    }
+}

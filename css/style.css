@@ -1,0 +1,200 @@
+:root{
+   --col-de-fondo: #F5F5F5;
+   --col-de-link: #000;
+   --col-de-icon: #2A7AE4;
+   --preto-50: #A2A2A2;
+   --preto-100: #464646;
+   --preto-blanco: #FFF;
+   --azul-10: #c0d3ed;
+   --azul-100: #2A7AE4;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 70px;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 60, 255, 0.5);
+
+    z-index: 9999;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+.show-overlay {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+
+body {
+    box-sizing: border-box;
+    background-color: var(--col-de-fondo) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--col-de-link);
+}
+
+.todo {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    gap: 32px;
+}
+
+
+
+/* Agregar estilo a los enlaces */
+
+.menu__list__item a {
+    position: relative;
+    color: var(--col-de-link);
+    text-decoration: none;
+}
+
+
+.menu__list__item a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(0, 51, 255);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+.menu__list__item a:hover::after {
+    opacity: 1;
+}
+
+
+
+
+/* Estilo del título y la bio */
+.title__container h2,
+.title__container h3 {
+    position: relative;
+    color: #0232d2;
+    text-decoration: none;
+    transition: color 0.6s ease; 
+    
+    background-image: linear-gradient(to right, #0073ff, #01b2fd);
+    background-clip: text;
+    -webkit-background-clip: text; 
+    color: transparent;
+}
+
+
+.title__container h2:hover,
+.title__container h3:hover {
+    color: #0232d2; 
+    background-image: none; 
+}
+
+
+.title__profile {
+    transition: box-shadow 0.3s ease; 
+}
+
+
+.title__profile:hover {
+    box-shadow: 0 0 10px 5px rgba(54, 92, 245, 0.473); 
+}
+
+
+.title__network__item a {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease; 
+}
+
+
+.title__network__item a:hover {
+    color: #00f; 
+}
+
+
+
+/* Estilo de las cajas de imágenes en las secciones Skills y Hobbies */
+.skills__box,
+.hobbies__box {
+    position: relative;
+    overflow: hidden;
+}
+
+
+img.skills__img,
+img.hobbies__img {
+    transition: transform 0.3s ease; 
+}
+
+
+.skills__box::before,
+.hobbies__box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 98, 255, 0.5), rgba(0, 0, 255, 0.2));
+    opacity: 0;
+    transition: opacity 0.3s ease; 
+}
+
+.skills__box:hover::before,
+.hobbies__box:hover::before {
+    opacity: 1; 
+}
+
+
+img.skills__box:hover,
+img.hobbies__box:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+/* Estilo de los botones */
+.formcontacto__boton {
+    background-image: linear-gradient(to right, #007bff, #00a0e6); 
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-image 0.3s ease; 
+}
+
+
+.formcontacto__boton:hover {
+    background-image: linear-gradient(to right, #00a0e6, #007bff); 
+}
