@@ -210,7 +210,7 @@ p, li.academic__courses__item__subtitle {
 
     ul.academic__courses__list {
         height: auto;
-        padding: 16px;
+        padding: 32px;
         display: flex;
         align-items: stretch;
         gap: 8px;
