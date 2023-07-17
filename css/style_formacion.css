@@ -224,5 +224,6 @@ p, li.academic__courses__item__subtitle {
         flex: 4 0 0;
         flex-direction: column;
         align-items: flex-start;
+        margin: 54px;
     }
 }
