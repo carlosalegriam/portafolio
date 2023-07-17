@@ -219,11 +219,9 @@ p, li.academic__courses__item__subtitle {
     }
 
     .academic__courses__box {
-        /* padding: 16px;*/
         display: flex;
-        align-items: center;
         gap: 8px;
-        flex: 1 0 0;
+        flex: 4 0 0;
         flex-direction: column;
         align-items: flex-start;
     }
